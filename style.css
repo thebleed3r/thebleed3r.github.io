@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+mark.bg, a.bg {
+    color: black;
+    background: #D6D6FF;
+    text-decoration: none;
+}
+a.bg:hover {
+    background: #454580;
+    color: white;
+}
+
+/* ===========HOME=========== */
+.home {
+    height: 100vh;                              /*100% viewport height*/
+    background: #2b2bb0;
+    position: relative;
+    overflow-y: hidden;
+}
+.home a.scroll {
+    position: absolute;
+	bottom: 10rem;
+	left: 50%;
+	z-index: 2;
+    display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+    text-decoration: none;
+    z-index: 101;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.home a.scroll img {
+    transform: rotate(90deg);
+    width: 1.5rem;
+}
+.home .bg-light {                               /*override bs' nav bg color*/
+    background-color: transparent !important;
+    border-bottom: 1px solid #ffffff30;
+}
+.home a.navbar-brand span {
+    color: #D6D6FF;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.home a.navbar-brand:hover {
+    color: #2b2bb0;
+}
+.navbar-light .navbar-brand ,
+.navbar-light .navbar-nav .nav-link {           /*nav links color*/
+    color: #fff;        
+    transition: all ease 0.4s;                  /*transition on hover*/
+} 
+.navbar-light .navbar-nav .nav-link:focus ,
+.navbar-light .navbar-nav .nav-link:hover {     /*nav links color on hover*/
+    color: #ffffff80;
+}
+.navbar-light .navbar-brand {
+    font-size: 1.5rem;                          /*logo font size*/
+}
+.navbar-light .navbar-nav .nav-link {           /*nav links customization*/
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .5px; 
+    padding: 0 1.5rem;
+}
+
+.content {
+    color: #fff;
+}
+.content h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.content h1 {
+    font-size: 4rem;
+    color:#8A8AFF;
+    font-weight:bold;
+    font-family: 'Raleway';
+}
+.navbar .navbar-toggler-icon {
+background: url('./svg/command.svg') no-repeat center;
+background-size: 100% 100%;
+}
+button.navbar-toggler , 
+button.navbar-toggler:active ,
+button.navbar-toggler:focus,
+.back-to-top:active,
+.back-to-top:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+button.navbar-toggler:hover {
+    filter: opacity(50%);
+    transition: all ease 0.4s;
+    transform: rotate(90deg);
+}
+
+.content a {
+    display: inline-block;
+    width: 12.5rem;
+    height: 60px;
+    border: 1px solid #ffffff80;
+    text-decoration: none;
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-top: 5rem;
+    transition: all ease 0.4s;
+    z-index: 100;
+}
+.content a:hover {
+    background-color: #fff;
+    color: #2b2bb0;
+}
+.content-text {
+    padding-top: 10rem;
+}
+.content-img {
+    padding-top: 10rem;
+}
+
+.home:before {
+    position: absolute;
+    content: '';
+    background: url(./svg/wave.svg) no-repeat;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+}
+/* ===========PROJECTS=========== */
+.projects {
+    background: #f3f4f5;
+    position: relative;
+    overflow-y: hidden;
+    padding-bottom: 0;
+}
+.projects h2 {
+    color: #454580;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-family: 'Raleway';
+}
+.projects-description {
+    color: #454580;
+}
+/* -----------carousel-------------- */
+#multi-item-example {
+    height: auto;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 2rem;
+    height: .3rem;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #454580;   
+}
+.carousel-indicators .active {
+    background-color: #454580;
+}
+/* ------------cards--------------- */
+.card-container {
+    width: 22rem;
+    min-height: 40rem;
+}
+.top img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all ease .4s;
+    border: 1px solid white;
+}
+.top img:hover {
+    filter: grayscale(0);
+}
+.bott {
+    text-align: center;
+}
+.bott h3 , h5 {
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+.bott h3 {
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+.bott h5 {
+    color: #454580;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+.card-container p {
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+    
+}
+button.butt {
+    padding: .5rem .8rem;
+    color: #454580;
+    background: white;
+    border: 1px solid #454580;
+    text-decoration: none;
+    transition: all ease 0.4s;
+    
+}
+button.butt:hover {
+    background: #454580;
+    color: white;
+    border: 1px solid #454580;
+}
+button.butt:focus,
+button.butt:active {
+    outline: none;
+    box-shadow: none;
+}
+/* ===========CONTACT=========== */
+.contact {
+    background: #425096;
+    position: relative;
+    padding-top: 8rem;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.contact h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Raleway';
+}
+.contact p{
+    color: white;
+}
+/* -------form--------- */
+.form-control {
+    border: 2px solid #425096;
+    border-radius: 0;
+    line-height: 3rem;
+    height: 3rem;
+}
+#contact input , #contact textarea {
+    background: #425096;
+    border-bottom: 1px solid #8A8AFF;
+    width: 100%;
+    color: white;
+}
+div.form-group input::placeholder , #contact textarea::placeholder {
+    color: #8A8AFF;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border:1px solid transparent;
+    border-bottom: 1px solid #8A8AFF;
+}
+.btn-primary {
+    margin-top: 1rem;
+    background: #425096;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    transition: all ease .4s;
+}
+.btn-primary:hover {
+    background: white;
+    color: #425096;
+    border: 1px solid #425096;
+}
+
+.contact:before {
+    position: absolute;
+    content: '';
+    background: url(./svg/wave3.svg) no-repeat;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+}
+/* ===========FOOTER=========== */
+.footer {
+    background: #425096;
+    color: #8A8AFF;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all ease .4s;
+}
+.back-to-top:hover {
+    background: #8A8AFF;
+}
+
+/* =============MODAL============= */
+.modal-content {
+    background: #f3f4f5;
+}
+.modal-title {
+    color: #425096;
+    font-weight: 500;
+}

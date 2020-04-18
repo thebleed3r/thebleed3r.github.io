@@ -1,0 +1,126 @@
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+    /* HOME */
+    .content-text {
+        padding-top: 1rem !important;
+    }
+    .content-img {
+        display: none;
+    }
+    .home:before {  
+        display: none; 
+    }
+    h6, h1.mt-5, h2.mt-5 {
+        text-align: center;
+        margin-top: 2rem !important;
+    }
+    .content h6 {
+        font-size: 1rem !important;
+    }
+    .content h1 {
+        font-size: 3rem !important;
+    }
+    .content h2 {
+        font-size: 1.8rem !important;
+    }
+    div.butts {
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+    .content a {
+        width: auto !important;
+        height: auto !important;
+        font-size: 1.3rem;
+        padding: 0 20px !important;
+        line-height: 50px !important;
+        margin-top: 2rem !important;
+        border-radius: 30px;
+        background: #8A8AFF;
+        border: 1px solid #ffffff80;
+    }
+    .home a.scroll {
+        bottom: 1rem !important;
+    }
+    .back-to-top {
+        display: none;
+    }
+    /* PROJECTS */
+    .projects h2 {
+        padding: 2rem 0;
+        font-size: 2rem !important;
+        text-decoration: underline;
+    }
+    .projects p {
+        display: none;
+    }
+    .card-container {
+        margin: auto;
+    }
+    /* CONTACT */
+    .contact-right {
+        display: none;
+    }
+    .btn-primary {
+        margin-left: 1rem;
+    }
+   }
+
+
+   @media (min-width: 481px) and (max-width: 990px) {
+    .content-text {
+        padding-top: 1rem !important;
+    }
+    .content-img {
+        display: none;
+    }
+    h6, h1.mt-5, h2.mt-5 {
+        text-align: center;
+        margin-top: 5rem !important;
+    }
+    .content h6 {
+        font-size: 1rem !important;
+    }
+    .content h1 {
+        font-size: 4rem !important;
+    }
+    .content h2 {
+        font-size: 2rem !important;
+    }
+    div.butts {
+        margin-top: 3rem !important;
+        text-align: center;
+    }
+    .content a {
+        width: auto !important;
+        height: auto !important;
+        font-size: 1rem;
+        padding: 0 20px !important;
+        line-height: 50px !important;
+        margin-top: 2rem !important;
+    }
+    .home a.scroll {
+        bottom: 5rem !important;
+    }
+    .back-to-top {
+        display: none;
+    }
+    /* PROJECTS */
+    .projects h2 {
+        padding-bottom: 2rem;
+        font-size: 3rem !important;
+    }
+    .card-container {
+        margin: auto;
+    }
+    .home:before {
+        height: 5rem !important;
+    }
+     /* CONTACT */
+     .contact-right {
+        display: none !important;
+    }
+    .btn-primary {
+        margin-left: 1rem;
+    }
+   }
